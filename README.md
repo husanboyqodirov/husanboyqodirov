@@ -22,14 +22,15 @@
 name:      Husanboy Qodirov
 role:      Embedded Systems Engineer @ (주)팰콘샵
 based_in:  Busan, South Korea 🇰🇷  ·  from Uzbekistan 🇺🇿
-focus:     [UAV software, flight simulation, ground control, secure comms]
-also:      [Android (Meta-certified), web backends, machine learning]
+focus:     [UAV software, flight simulation, drone camera systems, secure comms]
+also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends, ML]
 ```
 
-- 🛩️ Day to day I work on **drone and flight-simulation software** — from the embedded side up to the tools pilots and operators actually use.
+- 🛩️ Day to day I work on **drone and flight-simulation software**, from the embedded side up to the tools pilots and operators actually use.
+- 🎥 I build **drone camera setups**, such as running three live cameras on a SIYI UniRC7 with a Raspberry Pi in the loop.
 - 🔐 I care about **secure, lightweight communication** between aircraft and ground stations.
-- 📱 **Certified Android Developer** — I build native Android apps in Kotlin.
-- 📚 I like making knowledge accessible — I digitized **Uzbek school textbooks** so students can read them freely.
+- 🦀 I write **native Windows software in Rust**, like a screen recorder and video editor that uses only built-in Windows components.
+- 📱 **Meta-certified Android Developer**: I build native Android apps in Kotlin.
 
 ---
 
