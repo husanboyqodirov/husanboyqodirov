@@ -189,8 +189,7 @@ also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends,
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=husanboyqodirov&theme=transparent" alt="Repos per language" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=husanboyqodirov&theme=transparent" alt="Most commit language" width="49%" />
+  <img src="assets/languages.svg" alt="Top languages across public and private repositories" width="100%" />
 </p>
 
 ---
