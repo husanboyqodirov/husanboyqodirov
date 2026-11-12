@@ -4,8 +4,10 @@ Needs a token that can read your private repos (own + organizations), passed as
 STATS_TOKEN. Only aggregated language totals are written to the SVG; no
 repository names leave the script.
 
-Counted: non-fork repos you own, collaborate on or reach through an
-organization, in which you authored at least one commit on the default branch.
+Counted: non-fork repos you own, collaborate on, or that belong to any of your
+organizations, in which you authored at least one commit on the default branch.
+Code size is scaled by your share of each repo's commits, so large shared
+codebases you only touched lightly do not dominate.
 
 Usage: STATS_TOKEN=... python scripts/languages.py
 """
@@ -40,46 +42,71 @@ def gql(query, variables=None):
     return body["data"]
 
 
-REPOS = """query($c:String,$id:ID!){viewer{repositories(first:30,after:$c,isFork:false,
-  ownerAffiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER]){
-  pageInfo{hasNextPage endCursor}
+FIELDS = """pageInfo{hasNextPage endCursor}
   nodes{
+    id isFork
     primaryLanguage{name color}
     languages(first:20,orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}
-    defaultBranchRef{target{...on Commit{history(author:{id:$id}){totalCount}}}}
-  }}}}"""
+    defaultBranchRef{target{...on Commit{all:history{totalCount} mine:history(author:{id:$id}){totalCount}}}}
+  }"""
+
+VIEWER_REPOS = """query($c:String,$id:ID!){viewer{repositories(first:25,after:$c,isFork:false,
+  ownerAffiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER]){%s}}}""" % FIELDS
+
+ORG_REPOS = """query($o:String!,$c:String,$id:ID!){organization(login:$o){repositories(first:25,after:$c){%s}}}""" % FIELDS
+
+
+def pages(query, variables, path):
+    cursor = None
+    while True:
+        data = gql(query, {**variables, "c": cursor})
+        for key in path:
+            data = data[key]
+        yield from data["nodes"]
+        if not data["pageInfo"]["hasNextPage"]:
+            return
+        cursor = data["pageInfo"]["endCursor"]
 
 
 def collect():
-    uid = gql("{viewer{id}}")["viewer"]["id"]
+    viewer = gql("{viewer{id organizations(first:100){nodes{login}}}}")["viewer"]
+    uid = viewer["id"]
+    orgs = [o["login"] for o in viewer["organizations"]["nodes"]]
+
+    # The viewer's repository list misses some organization repos, so walk
+    # every organization's repositories too and de-duplicate.
+    seen = {}
+    for n in pages(VIEWER_REPOS, {"id": uid}, ("viewer", "repositories")):
+        seen[n["id"]] = n
+    for org in orgs:
+        for n in pages(ORG_REPOS, {"o": org, "id": uid}, ("organization", "repositories")):
+            seen.setdefault(n["id"], n)
+
     by_bytes, by_commit, colors = Counter(), Counter(), {}
     repos = commits = 0
-    cursor = None
-    while True:
-        page = gql(REPOS, {"c": cursor, "id": uid})["viewer"]["repositories"]
-        for n in page["nodes"]:
-            target = (n.get("defaultBranchRef") or {}).get("target") or {}
-            mine = (target.get("history") or {}).get("totalCount", 0)
-            if mine == 0:
-                continue
-            repos += 1
-            commits += mine
-            edges = n["languages"]["edges"]
-            total = sum(e["size"] for e in edges)
-            for e in edges:
-                name = e["node"]["name"]
-                colors[name] = e["node"]["color"] or ACCENT
-                by_bytes[name] += e["size"]
-                # Spread this repo's commits over its languages by code share.
-                if total:
-                    by_commit[name] += mine * e["size"] / total
-            if not edges and n.get("primaryLanguage"):
-                pl = n["primaryLanguage"]
-                colors[pl["name"]] = pl["color"] or ACCENT
-                by_commit[pl["name"]] += mine
-        if not page["pageInfo"]["hasNextPage"]:
-            break
-        cursor = page["pageInfo"]["endCursor"]
+    for n in seen.values():
+        if n["isFork"]:
+            continue
+        target = (n.get("defaultBranchRef") or {}).get("target") or {}
+        mine = (target.get("mine") or {}).get("totalCount", 0)
+        total_commits = (target.get("all") or {}).get("totalCount", 0) or mine
+        if mine == 0:
+            continue
+        repos += 1
+        commits += mine
+        share = mine / total_commits  # only count your share of shared codebases
+        edges = n["languages"]["edges"]
+        size = sum(e["size"] for e in edges)
+        for e in edges:
+            name = e["node"]["name"]
+            colors[name] = e["node"]["color"] or ACCENT
+            by_bytes[name] += e["size"] * share
+            if size:
+                by_commit[name] += mine * e["size"] / size
+        if not edges and n.get("primaryLanguage"):
+            pl = n["primaryLanguage"]
+            colors[pl["name"]] = pl["color"] or ACCENT
+            by_commit[pl["name"]] += mine
     return by_bytes, by_commit, colors, repos, commits
 
 
@@ -124,7 +151,7 @@ def legend(x, y, rows, colors):
 
 def render(by_bytes, by_commit, colors, repos, commits):
     W, H = 840, 245
-    panels = [("Languages by code size", top(by_bytes)), ("Languages by commits", top(by_commit))]
+    panels = [("Languages by code written", top(by_bytes)), ("Languages by commits", top(by_commit))]
     body = []
     for i, (title, rows) in enumerate(panels):
         ox = 20 + i * 410
