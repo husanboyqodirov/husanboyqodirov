@@ -4,13 +4,15 @@
 </p>
 
 <p align="center">
-  <a href="https://husanboy.com">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=2C9AB7&center=true&vCenter=true&width=600&lines=Embedded+systems+%26+UAV+software;Flight+simulation+%26+ground+control;Android+%E2%80%A2+Web+%E2%80%A2+Machine+learning;Building+things+that+fly%2C+run+and+ship" alt="Typing intro" />
+  <a href="https://husanboy.softromeda.com">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=2C9AB7&center=true&vCenter=true&width=600&lines=Embedded+systems+%26+UAV+software;Flight+simulation+%26+ground+control;Co-founder+of+Softromeda;Android+%E2%80%A2+Web+%E2%80%A2+Security;Building+things+that+fly%2C+run+and+ship" alt="Typing intro" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://husanboy.com"><img src="https://img.shields.io/badge/Website-husanboy.com-2c5364?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="https://husanboy.softromeda.com"><img src="https://img.shields.io/badge/Blog-husanboy.softromeda.com-2c5364?style=for-the-badge&logo=wordpress&logoColor=white" alt="Blog" /></a>
+  <a href="https://softromeda.com"><img src="https://img.shields.io/badge/Company-Softromeda-203a43?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Softromeda" /></a>
+  <a href="https://edu.softromeda.com"><img src="https://img.shields.io/badge/Learn-Softromeda%20Edu-0f2027?style=for-the-badge&logo=bookstack&logoColor=white" alt="Softromeda Edu" /></a>
   <img src="https://img.shields.io/badge/Open%20to-opportunities-2c9ab7?style=for-the-badge&logo=handshake&logoColor=white" alt="Open to opportunities" />
 </p>
 
@@ -20,17 +22,22 @@
 
 ```yaml
 name:      Husanboy Qodirov
-role:      Embedded Systems Engineer @ (주)팰콘샵
+role:      Embedded Systems Engineer @ FALCONSHOP Inc. (주)팰콘샵
+company:   Co-founder @ Softromeda (since 2017)
+education: [M.S. Computer Engineering, B.S. Computer Engineering] @ Dongseo University
 based_in:  Busan, South Korea 🇰🇷  ·  from Uzbekistan 🇺🇿
 focus:     [UAV software, flight simulation, drone camera systems, secure comms]
 also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends, ML]
 ```
 
-- 🛩️ Day to day I work on **drone and flight-simulation software**, from the embedded side up to the tools pilots and operators actually use.
+- 🛩️ Day to day I build **firmware and control software for unmanned aerial and ground vehicles**: flight-controller firmware, UAV ↔ GCS networking, custom ground control programs and AI-based automated missions.
 - 🎥 I build **drone camera setups**, such as running three live cameras on a SIYI UniRC7 with a Raspberry Pi in the loop.
 - 🔐 I care about **secure, lightweight communication** between aircraft and ground stations.
 - 🦀 I write **native Windows software in Rust**, like a screen recorder and video editor that uses only built-in Windows components.
-- 📱 **Meta-certified Android Developer**: I build native Android apps in Kotlin.
+- 📱 **Meta-certified Android Developer**: my apps on Google Play have **430K+ downloads** combined.
+- 🏢 I co-founded **[Softromeda](https://softromeda.com)** with my brother in high school. We have shipped 20+ products across Windows, Android and the web.
+- 🎓 We run **[Softromeda Edu](https://edu.softromeda.com)**, a free platform teaching programming and computer science entirely in Uzbek: 40 courses, 800 lessons.
+- ✍️ I write about programming, embedded systems and astronomy on **[my blog](https://husanboy.softromeda.com)**.
 
 ---
 
@@ -115,6 +122,64 @@ also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends,
     </td>
   </tr>
 </table>
+
+---
+
+## 💼 Experience
+
+| Role | Company | Period |
+|---|---|---|
+| **Embedded Systems Engineer** | [FALCONSHOP Inc.](https://falconshop.co.kr) · Busan | Apr 2024 – present |
+| **Co-founder, Software Engineer** | [Softromeda](https://softromeda.com) · Namangan | Mar 2017 – present |
+| Graphic Designer, UI/UX | [GmoneyTrans](https://gmoneytrans.com) · Korea | Sep 2019 – Oct 2019 |
+| Back-end Developer | BusanCoupon · Busan | Apr 2019 – May 2019 |
+
+## 🎓 Education
+
+| Degree | School | Period |
+|---|---|---|
+| **M.S. Computer Engineering** · GPA 4.19/4.50 · Cryptography & Network Security Lab | Dongseo University | 2022 – 2024 |
+| **B.S. Computer Engineering** · GPA 4.33/4.50 · ICT Convergence and Security Lab | Dongseo University | 2018 – 2022 |
+| Technician of Transmission Systems · Grade 5/5 | Norin Computer Technologies Vocational College | 2014 – 2017 |
+
+---
+
+## 📱 Published apps
+
+| App | Platform | Downloads | What it does |
+|---|---|---|---|
+| **Maktab Darsliklari** | Android | 220K+ | Offline textbooks for grades 1–11 in Uzbekistan schools |
+| **eMaktab** | Android | 170K+ | Grade journal for teachers, students and parents |
+| **40 Ҳадиси Қудсий** | Android | 42.2K+ | Translation of Imam Ghazali's forty hadith qudsi |
+| **Yo'l harakati qoidalari** | Android | 1K+ | Uzbek traffic rules, road signs and exam practice |
+| **365 kunga 365 ibratli hikoya** | Android | 1K+ | A story a day for children, all year round |
+| **Ish Rejalar** | Android | 722+ | Lesson plans for Uzbek school teachers |
+| **[COVID-19 Info](https://github.com/husanboyqodirov/COVID-19-Info)** | Android | Open source | Global COVID-19 statistics |
+| **Password Storer** | Windows | — | Simple password manager |
+
+<sub>Download counts as of January 2024.</sub>
+
+---
+
+## 📄 Publications
+
+- **A Closer Look at Attacks on Lightweight Cryptosystems: Threats and Countermeasures**: Springer, 15th Int. Conf. on Intelligent Human-Computer Interaction (IHCI), Nov 2023
+- **Enhancing the Lightweight Encryption Algorithm (LEA): Algorithmic and Implementation Perspectives**: KICSP Summer Conference, Jun 2023
+- **Design and Implementation of a Job Search System based on Android**: ICONI 2022 (KSII), Dec 2022
+- **ConWis Mobile: Implementation of AAC Assistive Mobile Application**: KICSP Summer Conference, Jun 2021
+- **'COVID-19 INFO': Global Statistics Tracking App for Mobile Phones**: 7th ICSMB, Jan 2021
+- **Implementation of a Web Application based on AAC for People with Hearing and Speech Impairment**: IEEE 22nd ICACT, Feb 2020
+- **ConWis: Assistive Software for People with Hearing and Speaking Disorders**: KIPS Fall Conference, Nov 2019
+
+## 🏅 Certificates
+
+<p>
+  <img src="https://img.shields.io/badge/Meta-Android%20Developer%20(Professional)-0467DF?style=flat-square&logo=meta&logoColor=white" />
+  <img src="https://img.shields.io/badge/CCNP%20R%26S-SWITCH-1BA0D7?style=flat-square&logo=cisco&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cybersecurity-Essentials-203a43?style=flat-square" />
+  <img src="https://img.shields.io/badge/IELTS-Band%207.5-c8102e?style=flat-square" />
+  <img src="https://img.shields.io/badge/Kotlin%20%C2%B7%20Python%20Core%20%C2%B7%20SQL-certified-2c9ab7?style=flat-square" />
+</p>
 
 ---
 
