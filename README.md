@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://husanboy.softromeda.com"><img src="https://img.shields.io/badge/Blog-husanboy.softromeda.com-2c5364?style=for-the-badge&logo=wordpress&logoColor=white" alt="Blog" /></a>
-  <a href="https://softromeda.com"><img src="https://img.shields.io/badge/Company-Softromeda-203a43?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Softromeda" /></a>
+  <a href="https://falconshop.co.kr"><img src="https://img.shields.io/badge/Company-%28%EC%A3%BC%29%ED%8C%B0%EC%BD%98%EC%83%B5-203a43?style=for-the-badge&logo=googlechrome&logoColor=white" alt="(주)팰콘샵" /></a>
   <a href="https://edu.softromeda.com"><img src="https://img.shields.io/badge/Learn-Softromeda%20Edu-0f2027?style=for-the-badge&logo=bookstack&logoColor=white" alt="Softromeda Edu" /></a>
   <img src="https://img.shields.io/badge/Open%20to-opportunities-2c9ab7?style=for-the-badge&logo=handshake&logoColor=white" alt="Open to opportunities" />
 </p>
