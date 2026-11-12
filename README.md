@@ -36,7 +36,7 @@ also:      [Android (Meta-certified), web backends, machine learning]
 ## 🛠️ Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,kotlin,java,php,js,html,css&perline=9" alt="Languages" /><br/>
+  <img src="https://skillicons.dev/icons?i=c,cpp,rust,python,kotlin,java,php,js,html,css&perline=10" alt="Languages" /><br/>
   <img src="https://skillicons.dev/icons?i=unreal,androidstudio,tensorflow,raspberrypi,arduino,linux,mysql,git,github&perline=9" alt="Tools" />
 </p>
 
@@ -45,6 +45,23 @@ also:      [Android (Meta-certified), web backends, machine learning]
 ## 🚀 Featured projects
 
 <table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎥 <a href="https://github.com/falconshop/SIYI-3Camera-mode">SIYI 3-Camera Mode</a></h3>
+      Watch three live cameras at once on a SIYI UniRC7 controller: a Raspberry Pi merges two IP camera feeds into one stream, so the air unit's two video inputs carry three cameras.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white" />
+      <img src="https://img.shields.io/badge/UAV-203a43?style=flat-square" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>⏺️ <a href="https://github.com/Softromeda/ScreenRecorder">Softromeda Screen Recorder</a></h3>
+      Screen recorder and video editor for Windows 10/11, written in Rust. Uses only built-in Windows components (GPU capture, hardware H.264, WASAPI audio), with no ffmpeg needed.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+      <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" />
+    </td>
+  </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🔐 <a href="https://github.com/husanboyqodirov/Speck-Cipher-for-GCS-and-UAV">Speck Cipher for GCS &amp; UAV</a></h3>
@@ -56,23 +73,25 @@ also:      [Android (Meta-certified), web backends, machine learning]
     </td>
     <td width="50%" valign="top">
       <h3>🐾 <a href="https://github.com/husanboyqodirov/Animal-Classifier">Animal Classifier</a></h3>
-      Classifying animals from images with a TensorFlow model.
+      Classifying animals from images with a TensorFlow / Keras model.
       <br/><br/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+      <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🗑️ <a href="https://github.com/husanboyqodirov/Smart-Dustbin">Smart Dustbin</a></h3>
-      A smart dustbin built on a Raspberry Pi — hardware and software in one small box.
+      A smart dustbin built on a Raspberry Pi using GPIO, with Telegram bot notifications.
       <br/><br/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white" />
+      <img src="https://img.shields.io/badge/Telegram%20Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white" />
     </td>
     <td width="50%" valign="top">
-      <h3>💬 <a href="https://github.com/husanboyqodirov/Conwis">Conwis</a></h3>
-      <i>Converse without struggles</i> — an Android app written in Kotlin.
+      <h3>🦠 <a href="https://github.com/husanboyqodirov/COVID-19-Info">COVID-19 Info</a></h3>
+      Android app for tracking global COVID-19 statistics from a public API.
       <br/><br/>
       <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
       <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
@@ -80,21 +99,18 @@ also:      [Android (Meta-certified), web backends, machine learning]
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🦠 <a href="https://github.com/husanboyqodirov/COVID-19-Info">COVID-19 Info</a></h3>
-      Android app for tracking global COVID-19 statistics.
+      <h3>🎨 <a href="https://github.com/husanboyqodirov/PPaint">PPaint</a></h3>
+      A paint program written entirely in Processing: pencil colours, ink sizes, background styles, eraser, music and PNG export.
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Processing-006699?style=flat-square&logo=processingfoundation&logoColor=white" />
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>💬 <a href="https://github.com/husanboyqodirov/Conwis">Conwis</a></h3>
+      <i>Converse without struggles</i>: an Android app written in Kotlin.
       <br/><br/>
       <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
       <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h3>📚 <a href="https://github.com/husanboyqodirov/Maktab-Darsliklari-Uzbek-9-10">Uzbek School Textbooks</a></h3>
-      Free digital copies of Uzbek school textbooks for grades
-      <a href="https://github.com/husanboyqodirov/Maktab-Darsliklari-Uzbek-5-6">5–6</a>,
-      <a href="https://github.com/husanboyqodirov/Maktab-Darsliklari-Uzbek-7-8">7–8</a> and
-      <a href="https://github.com/husanboyqodirov/Maktab-Darsliklari-Uzbek-9-10">9–10</a>.
-      <br/><br/>
-      <img src="https://img.shields.io/badge/Education-2c9ab7?style=flat-square" />
-      <img src="https://img.shields.io/badge/Open%20access-203a43?style=flat-square" />
     </td>
   </tr>
 </table>
