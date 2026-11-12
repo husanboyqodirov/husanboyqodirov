@@ -23,7 +23,7 @@ name:      Husanboy Qodirov
 role:      Embedded Systems Engineer @ (주)팰콘샵
 based_in:  Busan, South Korea 🇰🇷  ·  from Uzbekistan 🇺🇿
 focus:     [UAV software, flight simulation, ground control, secure comms]
-also:      [Android (Google-certified), web backends, machine learning]
+also:      [Android (Meta-certified), web backends, machine learning]
 ```
 
 - 🛩️ Day to day I work on **drone and flight-simulation software** — from the embedded side up to the tools pilots and operators actually use.
