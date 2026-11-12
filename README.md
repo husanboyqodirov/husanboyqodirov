@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://husanboy.softromeda.com"><img src="https://img.shields.io/badge/Blog-husanboy.softromeda.com-2c5364?style=for-the-badge&logo=wordpress&logoColor=white" alt="Blog" /></a>
   <a href="https://falconshop.co.kr"><img src="https://img.shields.io/badge/Company-%28%EC%A3%BC%29%ED%8C%B0%EC%BD%98%EC%83%B5-203a43?style=for-the-badge&logo=googlechrome&logoColor=white" alt="(주)팰콘샵" /></a>
-  <a href="https://edu.softromeda.com"><img src="https://img.shields.io/badge/Learn-Softromeda%20Edu-0f2027?style=for-the-badge&logo=bookstack&logoColor=white" alt="Softromeda Edu" /></a>
+  <a href="https://softromeda.com"><img src="https://img.shields.io/badge/Co--founded-Softromeda-0f2027?style=for-the-badge&logo=rocket&logoColor=white" alt="Co-founded Softromeda" /></a>
 </p>
 
 ---
@@ -185,8 +185,7 @@ also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends,
 ## 📊 GitHub stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=husanboyqodirov&theme=transparent" alt="GitHub stats" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=husanboyqodirov&theme=transparent&utcOffset=9" alt="Productive time" width="49%" />
+  <img src="assets/stats.svg" alt="GitHub contributions, public and private" width="100%" />
 </p>
 
 <p align="center">
