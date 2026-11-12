@@ -186,7 +186,8 @@ also:      [Windows desktop apps (Rust), Android (Meta-certified), web backends,
 ## 📊 GitHub stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=husanboyqodirov&theme=transparent" alt="Profile summary" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=husanboyqodirov&theme=transparent" alt="GitHub stats" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=husanboyqodirov&theme=transparent&utcOffset=9" alt="Productive time" width="49%" />
 </p>
 
 <p align="center">
