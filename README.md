@@ -21,8 +21,8 @@
 
 ```yaml
 name:      Husanboy Qodirov
-role:      Embedded Systems Engineer @ FALCONSHOP Inc. (주)팰콘샵
-company:   Co-founder @ Softromeda (since 2017)
+role:      Embedded Systems Engineer, Software Engineer 
+company:   (주)팰콘샵, Softromeda
 education: [M.S. Computer Engineering, B.S. Computer Engineering] @ Dongseo University
 based_in:  Busan, South Korea 🇰🇷  ·  from Uzbekistan 🇺🇿
 focus:     [UAV software, flight simulation, drone camera systems, secure comms]
